@@ -47,7 +47,7 @@ module.exports = {
             }
             // send the player's details to the database
             let query = "INSERT INTO `players` (first_name, last_name, position, number, image, user_name) VALUES ('" +
-              first_name + "', '" + last_name + "', '" + position + "', '" + number + "', '" + image_name + "', '" + username + "')";
+              first_name + "', '" + last_name + "', '" + position + "', '" + number + "', '" + image_name + "', '" + user_name + "')";
             db.query(query, (err, result) => {
               if (err) {
                 return res.status(500).send(err);
